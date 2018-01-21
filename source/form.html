@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="header-top-wrapper">
+        <span class="logo page-header__logo"></span>
+        <span class="about-logo page-header__about-logo"></span>
+        <div class="menu">
+          <div class="menu__logo">
+              <img src="" alt="logo">
+          </div>
+          <div class="menu__category visually-hidden">
+              <ul>
+                <li class="menu__item">
+                  <a class="menu__link" href="#"></a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#"></a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#"></a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <form action="https://echo.htmlacademy.ru" method="post"
+            class="form provide-info">
+        <h1 class="form__title title">
+          Подбор программы
+        </h1>
+        <p class="form__instructions">
+          ЗАПОЛНИТЕ АНКЕТУ И МЫ ПОДБЕРЕМ ПРОГРАММУ ПИТАНИЯ ДЛЯ ВАШЕГО КОТА
+        </p>
+        <fieldset class="form__cat-info cat-info">
+          <div class="cat-info__name">
+            <label>
+              ИМЯ:<sup>*</sup>
+              <input class="cat-info__input input--name" type="text"
+                     name="sobriquet" value="БАРСИК" required />
+            </label>
+          </div>
+          <div class="cat-info__weight">
+            <label>
+              ВЕС (КГ):<sup>*</sup>
+              <input class="cat-info__input input--weight" type="number"
+                     name="weight" value="7" required />
+            </label>
+          </div>
+          <div class="cat-info__age">
+            <label>
+              ВОЗРАСТ (ЛЕТ):
+              <input class="cat-info__input input--age" type="number"
+                     name="age" value="7" />
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__diet-choice">
+          <div class="diet-choice">
+            <ul class="diet-choice__list">
+              <li class="diet-choice__item">
+                <label>
+                  <input type="radio" name="slimming" value="slim" checked>
+                   ПОХУДЕНИЕ
+                </label>
+              </li>
+              <li class="diet-choice__item">
+                <label>
+                  <input type="radio" name="mass" value="waight-gain">
+                   НАБОР МАССЫ
+                </label>
+              </li>
+              <li class="diet-choice__item">
+                <label>
+                  <input type="radio" name="default" value="no-answer">
+                   НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)
+                </label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__personal-info personal-info">
+          <div class="icon icon--line"></div>
+          <label>
+            E-MAIL:<sup>*</sup>
+            <div class="personal-info__mail">
+              <input class="personal-info__input-mail input--mail" type="email"
+                     name="mail" value="KUKLACHEV@GMAIL.COM" required/>
+              <div class="icon icon--mail">
+                <img src="" alt="Отправить письмо">
+              </div>
+            </div>
+          </label>
+          <label>
+            E-MAIL:<sup>*</sup>
+            <div class="personal-info__mail">
+              <input class="personal-info__input-phone-number input--phone-number" type="tel"
+                     name="phone-number" value="8 (960) 900-60-90" required/>
+              <div class="icon icon--phone">
+                <img src="" alt="Ваш телефонный номер">
+              </div>
+            </div>
+          </label>
+        </fieldset>
+
+        <fieldset class="form__comment comment">
+          <h2 class="comment__title">Комметарий</h2>
+          <div class="icon icon--line"></div>
+          <textarea class="comment__info" name="comment">
+            РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА
+          </textarea>
+        </fieldset>
+
+        <fieldset class="form__extra extra">
+          <h2 class="extra__title">Дополнительно</h2>
+          <div class="icon icon--line"></div>
+          <ul class="extra__list">
+            <li class="extra__item">
+              <label>
+                <input class="input--extra" type="checkbox"
+                       name="sweetener" value="sweet" required />
+                САХАРОЗАМЕНИТЕЛЬ
+              </label>
+            </li>
+            <li class="extra__item">
+              <label>
+                <input class="input--extra" type="checkbox"
+                       name="water" value="drink" required />
+                ПИТЬЕВАЯ ВОДА
+              </label>
+            </li>
+            <li class="extra__item">
+              <label>
+                <input class="input--extra" type="checkbox"
+                       name="milk" value="drink" required />
+                МОЛОКО
+              </label>
+            </li>
+            <li class="extra__item">
+              <label>
+                <input class="input--extra" type="checkbox"
+                       name="vitamins" value="vitamins" required />
+                ВИТАМИНЫ
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="form__action form-click">
+          <button class="button button--green form__button"type="button"
+                  name="button">
+                  ОТПРАВИТЬ ЗАЯВКУ
+          </button>
+          <small class="form__legend legend ">
+            <sup>*</sup> — Обязательные поля
+          </small>
+        </div>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+     <div class="page-footer__contacts contacts ">
+       <div class="contacts__info">
+         <h2 class="contacts__title">
+           ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!
+         </h2>
+         <p class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+         </p>
+       </div>
+       <iframe src="https://www.w3schools.com" width="320" height="363"
+               allowfullscreen>
+       </iframe>
+       <span class="about-logo  about-logo--more contacts__about-logo">
+       </span>
+     </div>
+
+      <div class="page-footer__social social ">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte"
+               href="https://vk.com/htmlacademy"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram"
+               href="https://www.instagram.com/htmlacademy/"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook"
+               href="https://b-m.facebook.com/htmlacademy/"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">HTML Academy</span>
+        <a class="button copyright__link"
+           href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="" alt="Переход по сслыке на главную HTML Academy"
+               class="button__icon">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
