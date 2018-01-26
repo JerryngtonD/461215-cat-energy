@@ -9,16 +9,16 @@
     <header class="page-header">
       <nav class="main-nav">
         <a class="main-nav__logo" href="#">
-          <img class="main-nav__icon main-nav__icon--logo" src="" alt="">
+          <img class="main-nav__icon main-nav__icon--logo" src="img/icon-logo-mobile.svg" alt="">
         </a>
         <a class="main-nav__logo" href="#">
-          <img class="main-nav__icon main-nav__icon--text" src="" alt="">
+          <img class="main-nav__icon main-nav__icon--text" src="img/logo-mobile-header.svg" alt="">
         </a>
         <div class="menu">
-          <button class="menu__logo">
-            <span class="visually-hidden"></span>
-          </button>
-          <div class="main-nav__list category-list">
+          <div class="menu__logo">
+            <img src="img/icon-mobile-menu.svg" alt="logo">
+          </div>
+          <div class="main-nav__list category-list visually-hidden">
             <a class="menu__link" href="index.html">Главная</a>
             <a class="menu__link" href="form.html">Подбор программы</a>
             <a class="menu__link menu__link--active" href="catalog.html">Каталог продукции</a>
@@ -27,7 +27,7 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page-main page-form">
       <form action="https://echo.htmlacademy.ru" method="post" class="form provide-info">
         <h1 class="form__title title">
           Подбор программы
@@ -36,40 +36,48 @@
           заполните анкету и мы подберем программу питания для вашего кота!
         </p>
         <fieldset class="form__cat-info cat-info">
-          <div class="cat-info__name">
+          <div class="cat-info__name info">
             <label class="form__label" for="nickname_field">имя:<sup>*</sup>
             </label>
             <input class="form__text" id="nickname_field" type="text" name="sobriquet" placeholder="Барсик" required="required"/>
           </div>
-          <div class="cat-info__weight">
+          <div class="cat-info__weight info">
             <label class="form__label" for="weight_field">вес (кг):<sup>*</sup>
             </label>
             <input class="form__text" id="weight_field" type="number" name="weight" placeholder="7" required="required"/>
           </div>
-          <div class="cat-info__age">
+          <div class="cat-info__age info">
             <label class="form__label" for="age_field">возраст (лет):</label>
             <input class="form__text" id="age_field" type="number" name="age" placeholder="7"/>
           </div>
         </fieldset>
 
         <fieldset class="form__diet-choice">
-          <div class="diet-choice">
+          <div class="field-container">
             <input class="form__radio " id="diet_slim" type="radio" name="diet" value="slim" checked="checked">
             <label class="form__label" for="diet_slim">похудение</label>
+          </div>
+          <div class="field-container">
             <input class="form__radio " id="diet_mass" type="radio" name="diet" value="waight-gain">
             <label class="form__label" for="diet_mass">набор массы</label>
+          </div>
+          <div class="field-container">
             <input class="form__radio " id="diet_no_answer" type="radio" name="diet" value="no-answer">
             <label class="form__label" for="diet_no_answer">не знаю (нужен ваш совет)</label>
           </div>
         </fieldset>
 
         <fieldset class="form__personal-info personal-info">
-          <label class="form__label" for="mail_field">E-MAIL:<sup>*</sup>
-          </label>
-          <input class="form__text form__text--mail" id="mail_field" type="email" name="mail" placeholder="KUKLACHEV@GMAIL.COM" required="required"/>
-          <label class="form__label" for="phone_number_field">телефон:<sup>*</sup>
-          </label>
-          <input class="form__text form__text--phone" id="phone_number_field" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required="required"/>
+          <div class="field-container info">
+            <label class="form__label" for="mail_field">E-MAIL:<sup>*</sup>
+            </label>
+            <input class="form__text form__text--mail" id="mail_field" type="email" name="mail" placeholder="KUKLACHEV@GMAIL.COM" required="required"/>
+          </div>
+          <div class="field-container info">
+            <label class="form__label" for="phone_number_field">телефон:<sup>*</sup>
+            </label>
+            <input class="form__text form__text--phone" id="phone_number_field" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required="required"/>
+          </div>
         </fieldset>
 
         <fieldset class="form__comment comment">
@@ -81,20 +89,20 @@
           <h2 class="extra__title">Дополнительно</h2>
           <ul class="extra__list">
             <li class="extra__item">
-              <label class="form__label">сахарозаменитель</label>
               <input class="form__checkbox" type="checkbox" name="sweetener" value="sweet" required="required"/>
+              <label class="form__label">сахарозаменитель</label>
             </li>
             <li class="extra__item">
-              <label class="form__label">питьевая вода</label>
               <input class="form__checkbox" type="checkbox" name="water" value="drink" required="required"/>
+              <label class="form__label">питьевая вода</label>
             </li>
             <li class="extra__item">
-              <label class="form__label">молоко</label>
               <input class="form__checkbox" type="checkbox" name="milk" value="drink" required="required"/>
+              <label class="form__label">молоко</label>
             </li>
             <li class="extra__item">
-              <label class="form__label">витамины</label>
               <input class="form__checkbox" type="checkbox" name="vitamins" value="vitamins" required="required"/>
+              <label class="form__label">витамины</label>
             </li>
           </ul>
         </fieldset>
@@ -112,7 +120,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__contacts contacts ">
-        <div class="contacts__info">
+        <div class="contacts__info contacts__info--form">
           <h2 class="contacts__title">
             приглашаем к сотрудничеству дилеров!
           </h2>
@@ -137,8 +145,8 @@
       </div>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <img class="copyright__logo" src="" alt="Логотип html-academy">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <img class="copyright__logo" src="./img/htmlacademy.svg" alt="Логотип html-academy">
         </a>
       </div>
     </footer>
