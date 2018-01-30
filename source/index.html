@@ -3,33 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <span class="logo page-header__logo"></span>
-      <span class="about-logo page-header__about-logo"></span>
-      <div class="menu">
-        <div class="menu__logo">
-          <img src="" alt="logo">
+      <nav class="main-nav">
+        <a class="main-nav__logo" href="#">
+          <img class="main-nav__icon main-nav__icon--logo" src="img/icon-logo-mobile.svg" alt="">
+        </a>
+        <a class="main-nav__logo" href="#">
+          <img class="main-nav__icon main-nav__icon--text" src="img/logo-mobile-header.svg" alt="">
+        </a>
+        <div class="menu">
+          <div class="menu__logo">
+            <img src="img/icon-mobile-menu.svg" alt="logo">
+          </div>
+          <div class="main-nav__list category-list visually-hidden">
+            <a class="menu__link" href="index.html">Главная</a>
+            <a class="menu__link" href="form.html">Подбор программы</a>
+            <a class="menu__link menu__link--active" href="catalog.html">Каталог продукции</a>
+          </div>
         </div>
-        <div class="menu__category visually-hidden">
-          <ul>
-            <li class="menu__item">
-              <a class="menu__link" href="#"></a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#"></a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="slogan page-header__slogan">
-        <h1 class="slogan__title">функциональное питание для котов</h1>
+      </nav>
+      <div class="slogan">
+        <h1 class="slogan__title">Функциональное питание для котов</h1>
         <h2 class="slogan__reason">занялся собой? займись котом!</h2>
-        <img class="food-packaging page-header__production" alt="Cat energy Pro">
+        <img class="food-packaging" src="img/index-can-mobile@1x.png" alt="Cat energy Pro">
         <a class="button page-header__button" href="form.html">Подобрать программу</a>
       </div>
     </header>
@@ -55,24 +54,16 @@
         <h1 class="features__title">Как это работает</h1>
         <ul class="items features__items">
           <li class="feature feature--healthy">
-            <p class="feature__info">
-              Функциональное питание содержит только полезные питательные вещества.
-            </p>
+            Функциональное питание содержит только полезные питательные вещества.
           </li>
           <li class="feature feature__easy-cooking">
-            <p class="feature__info">
-              Выпускается в виде порошка, которые нужно лишь залить кипятком и готово.
-            </p>
+            Выпускается в виде порошка, которые нужно лишь залить кипятком и готово.
           </li>
           <li class="feature feature__apply">
-            <p class="feature__info">
-              Замените один-два приема обычной еды на наше функциональное питание.
-            </p>
+            Замените один-два приема обычной еды на наше функциональное питание.
           </li>
           <li class="feature feature-quick">
-            <p class="feature__info">
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-            </p>
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </li>
         </ul>
       </article>
@@ -81,19 +72,18 @@
         <h1 class="proof__title">Живой пример</h1>
         <p class="proof__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Сat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="proof__cases">
+        <div class="proof__group">
           <dl class="proof__case-item">
             <dt class="proof__case-number">5 кг</dt>
-            <dd class="proof__case-description">Снижение веса</dd>
+            <dd class="proof__case-description">cнижение веса</dd>
           </dl>
           <dl class="proof__case-item">
             <dt class="proof__case-number">60 ДНЕЙ</dt>
             <dd class="proof__case-description">затрачено времени</dd>
           </dl>
         </div>
-
         <h3 class="food-price">затраты на питание: 15 000 руб.</h3>
-        <img class="before-img" src="" alt="Фото-пруф кота до изменения">
+        <img class="before-img" src="img/before-mobile@1x.png" alt="Фото-пруф кота до изменения">
         <img class="after-img visually-hidden" src="" alt="Фото-пруф кота после изменения">
         <div class="obesity-state">
           <button class="toggle-control">было</button>
@@ -132,8 +122,8 @@
       </div>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <img class="copyright__logo" src="" alt="Логотип html-academy">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <img class="copyright__logo" src="./img/htmlacademy.svg" alt="Логотип html-academy">
         </a>
       </div>
     </footer>
