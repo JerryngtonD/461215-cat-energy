@@ -1,5 +1,3 @@
-@import "../mixins.less";
-
 .button {
   font: inherit;
   background: #68b738;
@@ -11,4 +9,22 @@
   border: none;
   text-decoration: none;
   .centerer();
+}
+
+.button--show-more {
+  background-color: #f2f2f2;
+  white-space: nowrap;
+  margin: 0;
+  padding-left: 108px;
+  padding-right: 108px;
+  //width: 280px;
+}
+
+.button--upload-items {
+  font-size: 0;
+  background-image: url("../img/icon-plus-mobile.svg");
+  background-repeat: no-repeat;
+  text-decoration: none;
+  width: 33px;
+  height: 33px;
 }
