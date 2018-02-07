@@ -2,20 +2,19 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  width: 100%;
   position: relative;
   width: 90px;
   margin: 50px auto; /* для демо */
   margin-bottom: 0px;
   color: #ffffff;
   text-transform: uppercase;
-  @media(min-width: @desktop-width) {
-    padding-left: 0;
-    padding-right: 0;
+  @media (min-width: @desktop-width) {
+    padding-left: 0; /* no unit */
+    padding-right: 0; /* no unit */
     margin-left: 50%;
-    padding-bottom: 0;
+    padding-bottom: 0; /* no unit */
     outline: 1px solid red;
-    margin-right: 0;
+    margin-right: 0; /* no unit */
   }
 }
 
@@ -59,12 +58,12 @@
 }
 
 .filter-wrapper {
-  @media(min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     padding-top: 365px;
     background-color: #f2f2f2;
   }
 
-  @media(min-width: @desktop-width) {
+  @media min-width: @desktop-width) {
     width: 618px;
   }
 }

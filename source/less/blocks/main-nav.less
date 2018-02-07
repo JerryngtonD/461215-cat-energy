@@ -1,5 +1,6 @@
 .main-nav {
   .container();
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -21,10 +22,12 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+
   @media (min-width: @tablet-width) {
     width: 175px;
     outline: 1px solid red;
   }
+
   @media (min-width: @desktop-width) {
     width: 205px;
   }
@@ -55,9 +58,10 @@
 }
 
 .main-nav__toggle {
-  background-image: url('../img/icon-mobile-menu.svg');
+  background-image: url("../img/icon-mobile-menu.svg");
   width: 20px;
   height: 20px;
+
   @media (min-width: @tablet-width) {
     display: none;
   }

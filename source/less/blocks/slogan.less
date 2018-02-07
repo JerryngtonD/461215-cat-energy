@@ -5,7 +5,7 @@
   color: white;
   text-align: center;
 
-  @media screen and (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     position: relative;
     width: @tablet-width;
     text-align: left;
@@ -15,18 +15,19 @@
     margin-right: auto;
   }
 
-    @media screen and (min-width: @desktop-width) {
+    @media (min-width: @desktop-width) {
       min-height: 645px;
       width: @desktop-width;
     }
 }
 
 .slogan__text {
-  background-image: url(../img/index-background-mobile@1x.jpg), linear-gradient(to bottom, #65a93c 305px, #ffffff 306px);
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #65a93c 305px, #ffffff 306px);
   background-position: center 0;
   background-repeat: no-repeat;
   background-color: #64a83b;
   min-height: 303px;
+
   @media screen and (min-width: @tablet-width) {
     background: white;
   }
