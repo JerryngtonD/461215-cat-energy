@@ -3,39 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <a class="main-nav__logo" href="#">
-          <img class="main-nav__icon main-nav__icon--logo" src="img/icon-logo-mobile.svg" alt="">
-        </a>
-        <a class="main-nav__logo" href="#">
-          <img class="main-nav__icon main-nav__icon--text" src="img/logo-mobile-header.svg" alt="">
-        </a>
-        <div class="menu">
-          <div class="menu__logo">
-            <img src="img/icon-mobile-menu.svg" alt="logo">
-          </div>
-          <div class="main-nav__list category-list visually-hidden">
-            <a class="menu__link" href="index.html">Главная</a>
-            <a class="menu__link" href="form.html">Подбор программы</a>
-            <a class="menu__link menu__link--active" href="catalog.html">Каталог продукции</a>
-          </div>
+        <div class="main-nav__logo-wrapper">
+          <a class="main-nav__logo" href="#">
+            <img class="main-nav__img main-nav__img--logo" src="img/icon-logo-mobile.svg" alt="">
+          </a>
+          <a class="main-nav__logo" href="#">
+            <img class="main-nav__img main-nav__img--logo" src="img/logo-mobile-header.svg" alt="">
+          </a>
+          <div class="main-nav__toggle"></div>
+        </div>
+        <div class="menu menu__list">
+          <a class="menu__link" href="index.html">Главная</a>
+          <a class="menu__link menu__link--active" href="catalog.html">Каталог продукции</a>
+          <a class="menu__link" href="form.html">Подбор программы</a>
         </div>
       </nav>
     </header>
 
     <main class="page-main page-form">
+      <h1 class="page-form__title title">
+        Подбор программы
+      </h1>
       <form action="https://echo.htmlacademy.ru" method="post" class="form provide-info">
-        <h1 class="form__title title">
-          Подбор программы
-        </h1>
         <p class="form__instructions">
           заполните анкету и мы подберем программу питания для вашего кота!
         </p>
-        <fieldset class="form__cat-info cat-info">
+        <div class="form__cat-info cat-info">
           <div class="cat-info__name info">
             <label class="form__label" for="nickname_field">имя:<sup>*</sup>
             </label>
@@ -50,9 +50,9 @@
             <label class="form__label" for="age_field">возраст (лет):</label>
             <input class="form__text" id="age_field" type="number" name="age" placeholder="7"/>
           </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="form__diet-choice">
+        <div class="form__diet-choice">
           <div class="field-container">
             <input class="form__radio " id="diet_slim" type="radio" name="diet" value="slim" checked="checked">
             <label class="form__label" for="diet_slim">похудение</label>
@@ -65,27 +65,28 @@
             <input class="form__radio " id="diet_no_answer" type="radio" name="diet" value="no-answer">
             <label class="form__label" for="diet_no_answer">не знаю (нужен ваш совет)</label>
           </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="form__personal-info personal-info">
-          <div class="field-container info">
+        <div class="form__personal-info personal-info">
+          <h2 class="form__title">Контактные данные (владельца кота)</h2>
+          <div class="field-container info personal-info__field">
             <label class="form__label" for="mail_field">E-MAIL:<sup>*</sup>
             </label>
             <input class="form__text form__text--mail" id="mail_field" type="email" name="mail" placeholder="KUKLACHEV@GMAIL.COM" required="required"/>
           </div>
-          <div class="field-container info">
+          <div class="field-container info personal-info__field">
             <label class="form__label" for="phone_number_field">телефон:<sup>*</sup>
             </label>
             <input class="form__text form__text--phone" id="phone_number_field" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required="required"/>
           </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="form__comment comment">
+        <div class="form__comment comment">
           <h2 class="comment__title">Комметарий</h2>
           <textarea class="comment__info" name="comment" placeholder="расскажите обо всех повадках кота"></textarea>
-        </fieldset>
+        </div>
 
-        <fieldset class="form__extra extra">
+        <div class="form__extra extra">
           <h2 class="extra__title">Дополнительно</h2>
           <ul class="extra__list">
             <li class="extra__item">
@@ -105,7 +106,7 @@
               <label class="form__label">витамины</label>
             </li>
           </ul>
-        </fieldset>
+        </div>
         <div class="form__action form-click">
           <button class="button form__button" type="submit" name="button">
             Отправить завку

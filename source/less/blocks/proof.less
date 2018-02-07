@@ -1,13 +1,40 @@
 .proof {
+  position: relative;
   background-color: #f2f2f2;
-  padding-left: 20px;
-  padding-top: 33px;
+  padding-bottom: 50px;
+  @media screen and (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+  @media screen and (min-width: @tablet-width) {
+    background-color: #f2f2f2;
+  }
+}
+
+.proof__info {
+  @media screen and (min-width: @tablet-width) {
+    padding-bottom: 100px;
+    background-color: white;
+  }
 }
 
 .proof__title {
   font-size: 36px;
   font-style: normal;
   font-weight: lighter;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: @tablet-width) {
+    width: 710px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media screen and (min-width: @desktop-width) {
+    width: 1220px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .proof__text {
@@ -20,7 +47,40 @@
 
 .proof__group {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  @media screen and (min-width: @tablet-width) {
+    justify-content: flex-start;
+  }
+}
+
+.proof__img {
+  @media screen and (min-width: @tablet-width) {
+    position: absolute;
+    left: 50%;
+    margin-left: -306px;
+    bottom: 110px;
+    width: 612px;
+    height: 517px;
+    outline: 1px solid red;
+  }
+  @media (min-width: @desktop-width) {
+    top: -10px;
+    margin-left: 0;
+  }
+}
+
+.proof__img--before {
+  @media screen and (min-width: @tablet-width) {
+    z-index: 2;
+    clip: rect(0, 306px, 517px, 0);
+  }
+}
+
+.proof__img--after {
+  display: none;
+  @media screen and (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .proof__case-number {
@@ -39,4 +99,34 @@
   font-size: 12px;
   font-weight: lighter;
   color: #444444;
+}
+
+.proof__wrapper {
+  .container();
+  width: 280px;
+  @media screen and (min-width: @tablet-width) {
+    width: auto;
+  }
+  @media screen and (min-width: @desktop-width) {
+    display: flex;
+    background-color: #f2f2f2;
+  }
+}
+
+.proof__wrapper-text {
+  @media screen and (min-width: @tablet-width) {
+    .container();
+    width: 708px;
+    position: relative;
+    margin-bottom: 240px;
+  }
+  @media screen and (min-width: @desktop-width) {
+    width: 612px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    outline: 1px solid red;
+  }
 }

@@ -1,8 +1,23 @@
 .special-offer {
+  margin-top: 20px;
+  .container();
   background-image: url("../img/gift-photo-mobile@1x.jpg");
-  width: 280px;
-  height: 288px;
+  width: 240px;
+  height: 268px;
   margin-bottom: 36px;
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    right: 72px;
+    top: 115px;
+    width: 160px;
+    height: 170px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 190px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
 }
 
 .special-offer__description {
