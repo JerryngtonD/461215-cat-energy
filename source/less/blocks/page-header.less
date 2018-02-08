@@ -2,7 +2,36 @@
   background-color: white;
 }
 
+.page-header--main {
+  @media screen and (min-width: @desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 46.7%;
+      height: 645px;
+      background-color: #64a83b;
+      background-image: url("../img/index-background-mobile@1x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
 .page-header__top-level {
   display: flex;
   justify-content: space-around;
+}
+
+.page-header__button {
+  display: block;
+  white-space: nowrap;
+
+  @media screen and (min-width: @tablet-width) {
+    position: absolute;
+    top: 150px;
+    margin: 0;
+    padding: 20px 25px;
+    width: 246px;
+  }
 }

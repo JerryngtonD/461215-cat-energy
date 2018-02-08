@@ -1,5 +1,21 @@
 .form {
-  .form-centerer();
+  .container();
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1220px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .form__comment {
@@ -18,6 +34,10 @@
     margin-right: 0;
     margin-top: -18px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+  }
 }
 
 .form__extra {
@@ -26,6 +46,15 @@
 
 .form__instructions {
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 323px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 600px;
+    margin-bottom: 67px;
+  }
 }
 
 .form__label {
@@ -38,8 +67,18 @@
 }
 
 .form__legend {
-  padding-top: 24px;
+  padding-top: 15px;
   padding-left: 80px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    padding-left: 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    padding-left: 80px;
+  }
 }
 
 .form__text {
@@ -53,4 +92,39 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.form__button {
+  @media (min-width: @tablet-width) {
+    width: 280px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
+}
+
+.form__title {
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.form__personal-info {
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.form__cat-info {
+  @media (min-width: @desktop-width) {
+    width: 568px;
+  }
 }

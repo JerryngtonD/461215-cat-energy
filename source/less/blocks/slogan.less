@@ -1,10 +1,36 @@
 .slogan {
-  width: 320px;
-  height: 305px;
   margin-bottom: 10px;
-  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: @tablet-width;
+    text-align: left;
+    background: white;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 645px;
+    width: @desktop-width;
+  }
+}
+
+.slogan__text {
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #65a93c 305px, #ffffff 306px);
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-color: #64a83b;
+  min-height: 303px;
+
+  @media screen and (min-width: @tablet-width) {
+    background: white;
+  }
 }
 
 .slogan__title {
@@ -15,7 +41,10 @@
   padding-left: 36px;
   padding-right: 36px;
   padding-top: 40px;
-  color: white;
+
+  @media screen and (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .slogan__reason {
@@ -26,6 +55,9 @@
   padding-left: 59px;
   padding-right: 59px;
   margin-top: 18px;
-  color: white;
   text-transform: uppercase;
+
+  @media screen and (min-width: @tablet-width) {
+    padding: 0;
+  }
 }

@@ -1,0 +1,39 @@
+.menu__link {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111111;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.menu__list {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .menu__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 445px;
+    outline: 1px solid red;
+  }
+
+  .menu__link {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .menu-list {
+    width: 482px;
+  }
+
+  .menu-list .menu__link {
+    color: #ffffff;
+  }
+}

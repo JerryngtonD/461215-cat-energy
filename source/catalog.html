@@ -3,26 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <a class="main-nav__logo" href="#">
-          <img class="main-nav__icon main-nav__icon--logo" src="img/icon-logo-mobile.svg" alt="">
-        </a>
-        <a class="main-nav__logo" href="#">
-          <img class="main-nav__icon main-nav__icon--text" src="img/logo-mobile-header.svg" alt="">
-        </a>
-        <div class="menu">
-          <div class="menu__logo">
-            <img src="img/icon-mobile-menu.svg" alt="logo">
-          </div>
-          <div class="main-nav__list category-list visually-hidden">
-            <a class="menu__link" href="index.html">Главная</a>
-            <a class="menu__link" href="form.html">Подбор программы</a>
-            <a class="menu__link menu__link--active" href="catalog.html">Каталог продукции</a>
-          </div>
+        <div class="main-nav__logo-wrapper">
+          <a class="main-nav__logo" href="#">
+            <img class="main-nav__img main-nav__img--logo" src="img/icon-logo-mobile.svg" alt="">
+          </a>
+          <a class="main-nav__logo" href="#">
+            <img class="main-nav__img main-nav__img--logo" src="img/logo-mobile-header.svg" alt="">
+          </a>
+          <div class="main-nav__toggle"></div>
+        </div>
+        <div class="menu menu__list">
+          <a class="menu__link" href="index.html">Главная</a>
+          <a class="menu__link menu__link--active" href="catalog.html">Каталог продукции</a>
+          <a class="menu__link" href="form.html">Подбор программы</a>
         </div>
       </nav>
     </header>
@@ -30,8 +30,8 @@
     <main class="page-main page-catalog">
       <h1 class="page-main__title">Каталог продукции</h1>
       <section class="page-main__catalog">
-        <ul class="page-catalog__products-list">
-          <li class="page-catalog__item catalog-item">
+        <section class="page-catalog__products-list">
+          <article class="page-catalog__item catalog-item">
             <div class="catalog-item__info">
               <div class="catalog-item-container">
                 <a class="catalog-item__link" href="chicken-small.html">
@@ -59,9 +59,9 @@
               </div>
             </div>
             <a class="button catalog-item__button" href="#">заказать</a>
-          </li>
+          </article>
 
-          <li class="page-catalog__item catalog-item">
+          <article class="page-catalog__item catalog-item">
             <div class="catalog-item__info">
               <div class="catalog-item-container">
                 <a class="catalog-item__link" href="chicken-small.html">
@@ -89,9 +89,9 @@
               </div>
             </div>
             <a class="button catalog-item__button" href="#">заказать</a>
-          </li>
+          </article>
 
-          <li class="page-catalog__item catalog-item">
+          <article class="page-catalog__item catalog-item">
             <div class="catalog-item__info">
               <div class="catalog-item-container">
                 <a class="catalog-item__link" href="chicken-small.html">
@@ -119,9 +119,9 @@
               </div>
             </div>
             <a class="button catalog-item__button" href="#">заказать</a>
-          </li>
+          </article>
 
-          <li class="page-catalog__item catalog-item">
+          <article class="page-catalog__item catalog-item">
             <div class="catalog-item__info">
               <div class="catalog-item-container">
                 <a class="catalog-item__link" href="chicken-small.html">
@@ -149,9 +149,9 @@
               </div>
             </div>
             <a class="button catalog-item__button" href="#">заказать</a>
-          </li>
+          </article>
 
-          <li class="page-catalog__item catalog-item">
+          <article class="page-catalog__item catalog-item">
             <div class="catalog-item__info">
               <div class="catalog-item-container">
                 <a class="catalog-item__link" href="chicken-small.html">
@@ -179,9 +179,9 @@
               </div>
             </div>
             <a class="button catalog-item__button" href="#">заказать</a>
-          </li>
+          </article>
 
-          <li class="page-catalog__item catalog-item">
+          <article class="page-catalog__item catalog-item">
             <div class="catalog-item__info">
               <div class="catalog-item-container">
                 <a class="catalog-item__link" href="chicken-small.html">
@@ -209,9 +209,9 @@
               </div>
             </div>
             <a class="button catalog-item__button" href="#">заказать</a>
-          </li>
+          </article>
 
-          <li class="page-catalog__item catalog-item">
+          <article class="page-catalog__item catalog-item">
             <div class="catalog-item__info">
               <div class="catalog-item-container">
                 <a class="catalog-item__link" href="chicken-small.html">
@@ -239,20 +239,19 @@
               </div>
             </div>
             <a class="button catalog-item__button" href="#">заказать</a>
-          </li>
-        </ul>
-
-        <div class="page-catalog__more more">
-          <a class="button--upload-items" href="#">+</a>
-          <h3 class="more__promo-title">показать еще 100500 товаров</h3>
-          <p class="more__proviso">На самом деле вкусов гораздо больше!</p>
-          <a class="button button--show-more" href="#">показать все</a>
-        </div>
+          </article>
+          <div class="page-catalog__more more">
+            <a class="button--upload-items" href="#">+</a>
+            <h3 class="more__promo-title">показать еще 100500 товаров</h3>
+            <p class="more__proviso">На самом деле вкусов гораздо больше!</p>
+            <a class="button button--show-more" href="#">показать все</a>
+          </div>
+        </section>
 
         <div class="page-catalog__addition addition">
           <h2 class="addition__title title">Дополнительные товары</h2>
           <ul class="addition-list">
-            <li class="page-catalog__item page-catalog__item--addition addition-item">
+            <li class="addition-item">
               <h3 class="addition-item__title">сахарозаменитель</h3>
               <dl class="addition-item__description">
                 <dt>1 Упаковка</dt>
@@ -261,7 +260,7 @@
               <a class="button addition-item__button" href="#">заказать</a>
             </li>
 
-            <li class="page-catalog__item page-catalog__item--addition addition-item">
+            <li class="addition-item">
               <h3 class="addition-item__title">питьевая вода</h3>
               <dl class="addition-item__description">
                 <dt>5 литров</dt>
@@ -270,7 +269,7 @@
               <a class="button  addition-item__button" href="#">заказать</a>
             </li>
 
-            <li class="page-catalog__item page-catalog__item--addition addition-item">
+            <li class="addition-item">
               <h3 class="addition-item__title">молоко</h3>
               <dl class="addition-item__description">
                 <dt>1 литр</dt>
@@ -279,7 +278,7 @@
               <a class="button addition-item__button" href="#">заказать</a>
             </li>
 
-            <li class="page-catalog__item page-catalog__item--addition addition-item">
+            <li class="addition-item">
               <h3 class="addition-item__title">витамины</h3>
               <dl class="addition-item__description">
                 <dt>1 Упаковка (30 г)</dt>
@@ -288,12 +287,11 @@
               <a class="button addition-item__button" href="#">заказать</a>
             </li>
           </ul>
-        </div>
-
-        <div class="special-offer">
-          <p class="special-offer__description">
-            Закажите все и получите чехол для кота в подарок!
-          </p>
+          <div class="special-offer">
+            <p class="special-offer__description">
+              Закажите все и получите чехол для кота в подарок!
+            </p>
+          </div>
         </div>
       </section>
     </main>
