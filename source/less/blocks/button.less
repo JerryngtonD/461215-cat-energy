@@ -1,7 +1,6 @@
 .button {
   font: inherit;
   background: #68b738;
-  padding: 14px 70px;
   text-align: center;
   color: white;
   vertical-align: middle;
@@ -14,7 +13,20 @@
   background-color: #f2f2f2;
   width: 100%;
   display: block;
-  padding: 12px 0;
+  padding: 8px 0;
+
+  @media (min-width: @tablet-width) {
+    width: 246px;
+    position: absolute;
+    top: 350px;
+    left: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+    top: 350px;
+    left: 37px;
+  }
 }
 
 .button--upload-items {
@@ -23,6 +35,19 @@
   background-image: url("../img/icon-plus-mobile.svg");
   background-repeat: no-repeat;
   text-decoration: none;
-  width: 33px;
-  height: 33px;
+  width: 30px;
+  height: 30px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    width: 60px;
+    top: 50px;
+    left: 133px;
+    height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 54px;
+    left: 93px;
+  }
 }

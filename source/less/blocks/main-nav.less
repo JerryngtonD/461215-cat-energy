@@ -1,10 +1,11 @@
 .main-nav {
+  padding-top: 9px;
   .container();
-
+  width: 320px;
+  margin-bottom: 12px;
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    outline: 1px solid red;
     width: 708px;
     padding-left: 30px;
     padding-right: 30px;
@@ -17,6 +18,10 @@
   }
 }
 
+.main-nav--closed {
+  margin-bottom: 9px;
+}
+
 .main-nav__logo-wrapper {
   display: flex;
   justify-content: space-between;
@@ -25,19 +30,25 @@
 
   @media (min-width: @tablet-width) {
     width: 175px;
-    outline: 1px solid red;
+    padding-top: 14px;
+    padding-left: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 205px;
+    width: 221px;
+    padding-left: 48px;
+    padding-top: 42px;
+    margin-left: -67px;
   }
 }
 
 .main-nav__logo {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 5px;
   text-align: center;
+  @media (min-width: @tablet-width) {
+    padding-top: 5px;
+  }
 
   &:hover {
     opacity: 0.8;
@@ -50,17 +61,30 @@
 
 .main-nav__img--logo {
   width: 33px;
-  margin-right: 55px;
+  @media (min-width: @desktop-width) {
+    margin-left: 41px;
+  }
 }
 
 .main-nav__img--text {
   width: 101px;
+  padding-right: 8px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 117px;
+    margin-right: -7px;
+  }
 }
 
 .main-nav__toggle {
   background-image: url("../img/icon-mobile-menu.svg");
-  width: 20px;
+  width: 24px;
   height: 20px;
+  margin-right: 40px;
 
   @media (min-width: @tablet-width) {
     display: none;

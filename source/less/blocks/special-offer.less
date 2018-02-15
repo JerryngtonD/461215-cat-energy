@@ -1,17 +1,49 @@
 .special-offer {
+  position: relative;
   margin-top: 20px;
   .container();
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
   width: 240px;
-  height: 268px;
+  height: 290px;
   margin-bottom: 36px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 63px;
+    left: 50%;
+    margin-left: -27px;
+    width: 55px;
+    height: 60px;
+    background-image: url(../img/icon-gift.svg);
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      top: 63px;
+      left: 118px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 65px;
+      left: 123px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    height: 198px;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 76px;
+  }
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    right: 72px;
-    top: 115px;
-    width: 160px;
-    height: 170px;
+    right: 15px;
+    top: 96px;
+    width: 165px;
+    height: 99px;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 190px;
@@ -23,7 +55,25 @@
 
 .special-offer__description {
   color: white;
-  width: 165px;
+  text-align: center;
+  width: 166px;
   padding-top: 190px;
-  padding-left: 66px;
+  padding-left: 37px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 73px;
+    padding-left: 403px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    position: relative;
+    top: -17px;
+    left: 0px;
+    text-align: center;
+  }
 }

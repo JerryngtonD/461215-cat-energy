@@ -1,15 +1,44 @@
 .more__promo-title {
-  margin-bottom: 7px;
+  margin-top: 25px;
+  margin-bottom: 0px;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    width: 140px;
+    position: absolute;
+    left: 94px;
+    top: 138px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 52px;
+    top: 138px;
+  }
 }
 
 .more__proviso {
+  margin-top: 10px;
   margin-bottom: 20px;
   text-align: center;
   font-size: 12px;
   font-family: "Arial", sans-serif;
+
+  @media (min-width: @tablet-width) {
+    width: 170px;
+    font-size: 16px;
+    top: 218px;
+    left: 78px;
+    line-height: 20px;
+    position: absolute;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 218px;
+    left: 36px;
+  }
 }

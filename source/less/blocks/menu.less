@@ -1,4 +1,5 @@
 .menu__link {
+  position: relative;
   display: block;
   padding-top: 22px;
   padding-bottom: 22px;
@@ -7,33 +8,49 @@
   color: #111111;
   text-transform: uppercase;
   text-align: center;
+  &--active {
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 14px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #68b738;
+
+      @media (min-width: @desktop-width) {
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+    font-size: 20px;
+  }
 }
+
 
 .menu__list {
   display: none;
-}
 
-@media (min-width: @tablet-width) {
-  .menu__list {
+  @media (min-width: @tablet-width) {
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 445px;
-    outline: 1px solid red;
   }
 
-  .menu__link {
-    font-size: 18px;
-    font-weight: 400;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .menu-list {
-    width: 482px;
-  }
-
-  .menu-list .menu__link {
-    color: #ffffff;
+  @media (min-width: @desktop-width) {
+    width: 477px;
+    margin-right: 1px;
+    padding-top: 39px;
   }
 }

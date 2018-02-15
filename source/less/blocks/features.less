@@ -11,6 +11,7 @@
     width: 708px;
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,50 +22,94 @@
 }
 
 .features__item {
+  position: relative;
   padding-left: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-family: "Arial", "Helvetica", sans-serif;
   font-weight: lighter;
   font-size: 14px;
   color: #444444;
-  padding-bottom: 5px;
-  outline: 1px dotted green;
+  padding-bottom: 6px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 3px;
+    }
+  }
 
   @media screen and (min-width: @tablet-width) {
     position: relative;
-    padding-top: 115px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 110px;
     padding-right: 100px;
     padding-bottom: 103px;
     padding-left: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     width: 228px;
-    outline: 1px dotted blue;
     flex-shrink: 3;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 80px;
-      height: 80px;
-      background-color: #68b738;
-    }
   }
 
   @media screen and (min-width: @desktop-width) {
     padding-right: 0;
+    margin-right: 2px;
+    width: 244px;
+    padding-top: 121px
+  }
+}
+
+.features__item--healthy::before {
+    background-image: url(../img/advantage-leaf@1x.png);
+}
+
+.features__item--cooking::before {
+    background-image: url("../img/advantage-powder@1x.png");
+}
+
+.features__item--apply::before {
+    background-image: url("../img/advantage-dining@1x.png");
+}
+
+.features__item--quick::before {
+    background-image: url("../img/advantage-clock@1x.png");
+}
+
+.features__item:nth-child(3),
+.features__item:nth-child(4) {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
   }
 }
 
 .features__title {
-  margin-bottom: 40px;
+    margin-top: -6px;
+    margin-bottom: 30px;
+    font-size: 35px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #111111;
 
-  @media screen and (min-width: @tablet-width) {
-    margin-top: 40px;
-    margin-bottom: 75px;
+  @media (min-width: @tablet-width) {
+    margin-top: 42px;
+    margin-bottom: 60px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 54px;
   }
 }
 
@@ -73,5 +118,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0;
   }
 }

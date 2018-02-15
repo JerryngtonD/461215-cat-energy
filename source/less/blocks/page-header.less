@@ -1,16 +1,41 @@
 .page-header {
   background-color: white;
+  margin-bottom: 20px;
+  @media screen and (min-width: @tablet-width) {
+    margin-bottom: 0px;
+  }
 }
 
+.page-header--closed {
+  border-bottom: 1px solid #ededed;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+.page-header--closed {
+  .menu__link {
+    color: black;
+  }
+  .menu__link--active {
+    &::after {
+      background-color: #68b738;
+    }
+  }
+}
+
+
 .page-header--main {
+  border: none;
   @media screen and (min-width: @desktop-width) {
     &::after {
       content: "";
       position: absolute;
       top: 0;
       right: 0;
-      width: 46.7%;
-      height: 645px;
+      width: 47.2%;
+      height: 696px;
       background-color: #64a83b;
       background-image: url("../img/index-background-mobile@1x.jpg");
       background-size: cover;
@@ -24,14 +49,30 @@
 }
 
 .page-header__button {
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: block;
   white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
 
-  @media screen and (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     position: absolute;
-    top: 150px;
+    top: 295px;
+    left: 120px;
     margin: 0;
-    padding: 20px 25px;
-    width: 246px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 192px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 352px;
+    left: 119px;
   }
 }

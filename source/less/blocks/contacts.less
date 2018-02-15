@@ -4,11 +4,30 @@
   width: 140px;
   font-size: 16px;
   line-height: 20px;
+  color: black;
+  font-weight: bolder;
+
+  @media (min-width: @tablet-width) {
+    width: 165px;
+    padding-top: 15px;
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 185px;
+    padding-top: 0px;
+    padding-left: 35px;
+    padding-right: 32px;
+    margin-top: 28px;
+  }
 }
 
 .contacts__map {
   width: 100%;
   height: 363px;
+  border: none;
 
   @media (min-width: @tablet-width) {
     height: 417px;
@@ -28,30 +47,71 @@
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 14px;
-  padding-bottom: 12px;
   .container();
 
   @media (min-width: @tablet-width) {
     width: 708px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 35px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    width: 430px;
+    align-items: flex-start;
+    width: 511px;
     background-color: white;
-    top: 145px;
-    left: 50%;
+    justify-content: space-around;
+    align-items: flex-start;
+    top: 100px;
+    left: 49.5%;
     margin-left: -605px;
   }
+}
+
+.contacts__info--form {
+  margin-bottom: 16px;
 }
 
 .contacts__address {
   width: 140px;
   padding-top: 14px;
   color: #444444;
+  text-align: left;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    width: 160px;
+    margin-top: 14px;
+    padding-right: 40px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 16px;
+    padding-top: 14px;
+    text-align: left;
+  }
+}
+
+.contacts__address span {
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-bottom: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}
+
+.contacts__info--form {
+  align-items: stretch;;
 }
