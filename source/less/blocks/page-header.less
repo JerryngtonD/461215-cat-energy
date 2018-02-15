@@ -1,8 +1,9 @@
 .page-header {
   background-color: white;
   margin-bottom: 20px;
+
   @media screen and (min-width: @tablet-width) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -12,19 +13,18 @@
   @media (min-width: @tablet-width) {
     border: none;
   }
-}
 
-.page-header--closed {
   .menu__link {
     color: black;
   }
+
   .menu__link--active {
+
     &::after {
       background-color: #68b738;
     }
   }
 }
-
 
 .page-header--main {
   border: none;

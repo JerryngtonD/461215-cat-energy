@@ -56,7 +56,6 @@
   &::before {
     content: "";
     height: 3px;
-    width: 50px;
     margin-top: 12px;
     flex-grow: 1;
     background-color: #68b738;
@@ -79,24 +78,20 @@
     &::after {
       content: "";
       height: 3px;
-      width: 50px;
       flex-grow: 1;
       background-color: #68b738;
-      -ms-flex-order: 1;
       position: absolute;
       z-index: 1;
       width: 100vw;
       top: 24px;
-      right: 0px;
+      right: 0;
     }
   }
 
   @media (min-width: @desktop-width) {
     margin-left: -40px;
   }
-}
 
-.extra__title {
   span {
     max-width: 190px;
     padding-right: 23px;

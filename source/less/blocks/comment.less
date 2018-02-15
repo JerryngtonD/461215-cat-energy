@@ -28,7 +28,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 0px;
+    margin-left: 0;
     width: 1200px;
     height: 166px;
   }
@@ -44,6 +44,19 @@
   line-height: 24px;
   font-weight: 400;
   background-color: #ffffff;
+
+  span {
+    max-width: 190px;
+    padding-right: 20px;
+    position: relative;
+    background-color: white;
+    z-index: 2;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
 
   &::before {
     background-color: #68b738;
@@ -65,33 +78,17 @@
     &::after {
       content: "";
       height: 3px;
-      width: 50px;
       flex-grow: 1;
       background-color: #68b738;
       position: absolute;
       z-index: 1;
       width: 100vw;
       top: 64px;
-      right: 0px;
+      right: 0;
     }
   }
 
-  @media (min-width: @desktop-width) {
+    @media (min-width: @desktop-width) {
       margin-left: -40px;
-  }
-}
-
-.comment__title {
-  span {
-    max-width: 190px;
-    padding-right: 20px;
-    position: relative;
-    background-color: white;
-    z-index: 2;
-
-    @media (min-width: @tablet-width) {
-      padding-left: 40px;
-      padding-right: 40px
     }
-  }
 }
