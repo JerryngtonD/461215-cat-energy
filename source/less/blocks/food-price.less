@@ -1,4 +1,5 @@
 .food-price {
+  margin: 0;
   font-size: 14px;
   font-weight: lighter;
   text-transform: uppercase;
@@ -7,13 +8,20 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     right: 30px;
-    bottom: 0;
+    bottom: 35px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: right;
+    width: 180px;
   }
 
   @media (min-width: @desktop-width) {
     position: static;
     margin-left: 0;
-    width: 360px;
-    text-align: left;
+    width: 330px;
+    display: flex;
+    padding-top: 29px;
+    justify-content: space-between;
+    padding-left: 36px;
   }
 }

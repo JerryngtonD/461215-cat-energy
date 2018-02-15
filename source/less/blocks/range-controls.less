@@ -1,0 +1,58 @@
+.range-controls {
+  position: relative;
+  width: 85px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 18px;
+  margin-right: 18px;
+  border-radius: 10px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    height: 6px;
+    width: 36px;
+    border-radius: 10px;
+    background-color: #68b738;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 430px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 6px;
+    border: 1px solid #dcdcdc;
+    background-color: #dcdcdc;
+    cursor: none;
+
+    &::before {
+      top: 1px;
+      left: 50%;
+      margin-left: -4px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      z-index: 5;
+      cursor: pointer;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      margin-left: -15px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+    }
+  }
+}

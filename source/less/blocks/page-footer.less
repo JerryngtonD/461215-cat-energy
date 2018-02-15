@@ -2,6 +2,48 @@
   background-color: #f2f2f2;
 }
 
-.page-footer__contacts {
-  background-color: white;
+.page-footer__container {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.page-footer__logo {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  text-align: center;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 15px;
+    border: none;
+  }
+}
+
+.page-footer__copyright {
+  border-top: 1px solid #d9d9d9;
+  padding-top: 27px;
+  padding-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 40px;
+    border: none;
+    margin-top: -20px;
+  }
 }

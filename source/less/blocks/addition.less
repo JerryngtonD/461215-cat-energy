@@ -1,27 +1,86 @@
 .addition-list {
-  margin-bottom: 10px;
+  margin-bottom: 62px;
   width: 280px;
 
   @media (min-width: @tablet-width) {
     width: 708px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 71px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 900px;
+    width: 910px;
   }
 }
 
 .addition__title {
+  position: relative;
+  width: 260px;
   font-size: 24px;
   font-weight: lighter;
+  margin-top: 10px;
+  color: black;
+
+  span {
+    max-width: 260px;
+    padding-right: 11px;
+    position: relative;
+    background-color: white;
+    z-index: 2;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 37px;
+      padding-right: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 39px;
+    }
+  }
+
+  &::after {
+    content: "";
+    height: 3px;
+    background-color: #68b738;
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    left: 0;
+    top: 19px;
+
+    @media (min-width: @desktop-width) {
+      top: 22px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
+    white-space: nowrap;
     font-size: 36px;
     line-height: 36px;
-    padding-left: 38px;
-    margin-bottom: 80px;
+    padding-left: 0;
+    margin-bottom: 77px;
+
+    &::before {
+      content: "";
+      height: 3px;
+      flex-grow: 1;
+      background-color: #68b738;
+      position: absolute;
+      z-index: 1;
+      width: 100vw;
+      top: 19px;
+      right: 0;
+
+      @media (min-width: @desktop-width) {
+        top: 22px;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -25px;
+    margin-bottom: 79px;
   }
 }
 
@@ -30,12 +89,38 @@
   justify-content: space-between;
   margin-bottom: 17px;
   width: 280px;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Arial", sans-serif;
 
   @media (min-width: @tablet-width) {
     width: 235px;
-    padding-top: 5px;
     margin-bottom: 5px;
-    padding-right: 30px;
+    padding-right: 37px;
+    font-size: 16px;
+    margin-top: 32px;
+    justify-content: flex-end;
+
+    dt {
+      margin-right: 10px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    justify-content: space-between;
+    padding-top: 9px;
+    padding-left: 104px;
+    padding-right: 0;
+    width: 308px;
+
+    dt {
+      margin-left: 17px;
+    }
+
+    dd {
+      margin-right: 5px;
+    }
   }
 }
 
@@ -51,28 +136,50 @@
     display: block;
     width: 170px;
     height: auto;
-    padding-top: 15px;
+    padding-top: 5px;
     background-image: none;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 16px;
+    margin-left: -14px;
+    margin-bottom: 23px;
+    margin-top: 24px;
+    padding-top: 0;
+    padding-bottom: 4px;
   }
 }
 
 .addition-item {
+  margin-top: 37px;
+
   @media (min-width: @tablet-width) {
+    margin-top: 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    border: 1px solid #ededed;
+    padding-bottom: 27px;
   }
 
   @media (min-width: @desktop-width) {
     align-items: center;
-    width: 897px;
-    padding-top: 13px;
-    padding-bottom: 13px;
     margin-bottom: 0;
+    border: none;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 14px;
   }
 }
 
 .addition-item__button {
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 108px;
   padding-right: 108px;
 
@@ -88,5 +195,7 @@
     margin-right: 0;
     flex-grow: 0;
     padding: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }
