@@ -7,7 +7,7 @@
   @media (min-width: @tablet-width) {
     display: block;
     width: 324px;
-    padding-bottom: 48px;
+    padding-bottom: 46px;
     margin-bottom: -5px;
     margin-left: 0;
     margin-right: 0;
@@ -83,22 +83,31 @@
   font-family: "Arial", "Helvetica", sans-serif;
   width: 140px;
   font-size: 12px;
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-bottom: 0;
   line-height: 1.28em;
   font-weight: 400;
 }
 
 .catalog-item__title {
-  margin-top: 14px;
-  padding-left: 48px;
+  margin-top: 22px;
   padding-right: 47px;
-  text-align: center;
-  margin-bottom: 27px;
-  font-size: 20px;
+  text-align: left;
+  margin-bottom: 13px;
+  font-size: 16px;
   line-height: 20px;
   color: #111111;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    padding-left: 53px;
+    text-align: center;
+    padding-right: 55px;
+    margin-top: 32px;
+    margin-bottom: 27px;
+  }
 
   @media (min-width: @desktop-width) {
     padding-left: 5px;
@@ -123,11 +132,11 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
-    height: 293px;
+    height: 277px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to bottom, #ffffff 50%, #f2f2f2 50%);
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: linear-gradient(to bottom, #ffffff 53%, #f2f2f2 50%);
   }
 }
 

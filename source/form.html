@@ -12,7 +12,11 @@
       <nav class="main-nav main-nav--closed">
         <div class="main-nav__logo-wrapper">
           <a class="main-nav__logo" href="#">
-            <img class="main-nav__img main-nav__img--logo" src="img/icon-logo-mobile.svg" alt="">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-nav__img main-nav__img--logo" src="img/icon-logo-mobile.svg" alt="">
+            </picture>
           </a>
           <a class="main-nav__logo" href="#">
             <img class="main-nav__img main-nav__img--text" src="img/logo-mobile-header.svg" alt="">
@@ -119,7 +123,7 @@
       </form>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--form">
       <div class="page-footer__contacts contacts ">
         <div class="contacts__info contacts__info--form">
           <h2 class="contacts__title">

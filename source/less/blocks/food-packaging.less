@@ -2,20 +2,38 @@
   margin-top: -150px;
   text-align: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  content: url("img/index-can-mobile@1x.png");
+  width: 280px;
+  height: 270px;
 
-  @media (min-width: @tablet-width) {
-    margin-top: -90px;
-    margin-left: 120px;
-    width: 620px;
-    height: 600px;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    content: url("../img/index-can-mobile@2x.png");
   }
 
+  @media (min-width: @tablet-width) {
+    content: url("../img/index-can-tablet@1x.jpg");
+    margin-top: -101px;
+    margin-left: 30px;
+    width: 707px;
+    height: 611px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      content: url("../img/index-can-tablet@2x.jpg");
+    }
+}
+
   @media (min-width: @desktop-width) {
+    content: url("img/index-can-desktop@1x.png");
     position: absolute;
     z-index: 2;
-    left: 405px;
-    top: 133px;
-    width: 514px;
+    left: 462px;
+    top: 140px;
+    width: 549px;
     height: auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      content: url("../img/index-can-desktop@2x.png");
+    }
   }
 }
