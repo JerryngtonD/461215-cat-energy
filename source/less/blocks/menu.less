@@ -13,11 +13,15 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 14px;
       left: 0;
       right: 0;
       height: 2px;
       background-color: #68b738;
+      z-index: 3;
+
+      @media (min-width: @tablet-width) {
+        top: 55px;
+      }
 
       @media (min-width: @desktop-width) {
         background-color: #ffffff;
@@ -46,12 +50,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 445px;
+    width: 440px;
   }
 
   @media (min-width: @desktop-width) {
     width: 477px;
     margin-right: 1px;
-    padding-top: 39px;
+    padding-top: 35px;
   }
 }

@@ -43,7 +43,6 @@
 .contacts__info {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
@@ -54,7 +53,7 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 35px;
-    padding-bottom: 30px;
+    padding-bottom: 44px;
   }
 
   @media (min-width: @desktop-width) {
@@ -70,8 +69,12 @@
 }
 
 .contacts__info--form {
-  margin-bottom: 16px;
+  padding-bottom: 16px;
   align-items: stretch;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 36px;
+  }
 }
 
 .contacts__address {
@@ -109,5 +112,11 @@
 
   @media (min-width: @desktop-width) {
     text-align: left;
+  }
+}
+
+.contacts__info--catalog {
+  @media (min-width: @tablet-width) {
+    background-color: #f2f2f2;
   }
 }

@@ -1,10 +1,11 @@
 .main-nav {
-  padding-top: 9px;
+  padding-top: 13px;
   .container();
   width: 320px;
   margin-bottom: 12px;
 
   @media (min-width: @tablet-width) {
+    padding-top: 9px;
     display: flex;
     justify-content: space-between;
     width: 708px;
@@ -13,6 +14,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 15px;
     width: 1220px;
     position: relative;
     z-index: 2;
@@ -31,26 +33,18 @@
 
   @media (min-width: @tablet-width) {
     width: 175px;
-    padding-top: 14px;
-    padding-left: 20px;
   }
 
   @media (min-width: @desktop-width) {
     width: 221px;
-    padding-left: 48px;
-    padding-top: 42px;
+    padding-left: 25px;
+    padding-top: 34px;
     margin-left: -67px;
   }
 }
 
 .main-nav__logo {
-  display: block;
-  padding-top: 5px;
   text-align: center;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 5px;
-  }
 
   &:hover {
     opacity: 0.8;
@@ -64,8 +58,15 @@
 .main-nav__img--logo {
   width: 33px;
 
+  @media (min-width: @tablet-width) {
+    width: 172px;
+    height: 88px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-left: 41px;
+    width: 203px;
+    height: 61px;
   }
 }
 
@@ -75,6 +76,7 @@
 
   @media (min-width: @tablet-width) {
     margin-right: 10px;
+    display: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -86,7 +88,7 @@
 .main-nav__toggle {
   background-image: url("../img/icon-mobile-menu.svg");
   width: 24px;
-  height: 20px;
+  height: 18px;
   margin-right: 40px;
 
   @media (min-width: @tablet-width) {

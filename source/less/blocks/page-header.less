@@ -37,8 +37,12 @@
       width: 47.2%;
       height: 696px;
       background-color: #64a83b;
-      background-image: url("../img/index-background-mobile@1x.jpg");
+      background-image: url("../img/index-background-desktop@1x.jpg");
       background-size: cover;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 }
@@ -49,8 +53,8 @@
 }
 
 .page-header__button {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   display: block;
   white-space: nowrap;
   margin-left: auto;
@@ -59,11 +63,11 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 295px;
+    top: 278px;
     left: 120px;
     margin: 0;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 26px;
+    padding-right: 27px;
     padding-top: 15px;
     padding-bottom: 15px;
     width: 192px;

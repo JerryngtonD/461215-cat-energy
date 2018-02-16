@@ -30,6 +30,11 @@
   background-color: #64a83b;
   min-height: 303px;
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to bottom, #65a93c 305px, #ffffff 306px);
+    background-size: contain;
+  }
+
   @media screen and (min-width: @tablet-width) {
     background: white;
   }
@@ -44,19 +49,19 @@
   font-style: normal;
   font-weight: normal;
   line-height: 40px;
-  padding-top: 25px;
+  padding-top: 22px;
 
   @media (min-width: @tablet-width) {
     width: 500px;
     font-size: 60px;
     line-height: 60px;
     margin-left: 115px;
-    margin-top: 25px;
+    margin-top: 12px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 7px;
-    padding-top: 72px;
+    padding-top: 86px;
     text-align: left;
   }
 }
@@ -68,7 +73,7 @@
   line-height: 18px;
   padding-left: 59px;
   padding-right: 59px;
-  margin-top: 20px;
+  margin-top: 19px;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {

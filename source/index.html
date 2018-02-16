@@ -12,7 +12,11 @@
       <nav class="main-nav">
         <div class="main-nav__logo-wrapper">
           <a class="main-nav__logo" href="#">
-            <img class="main-nav__img main-nav__img--logo" src="img/icon-logo-mobile.svg" alt="">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-nav__img main-nav__img--logo" src="img/icon-logo-mobile.svg" alt="">
+            </picture>
           </a>
           <a class="main-nav__logo" href="#">
             <img class="main-nav__img main-nav__img--text" src="img/logo-mobile-header.svg" alt="">
@@ -30,7 +34,13 @@
           <h1 class="slogan__title">Функциональное питание для котов</h1>
           <h2 class="slogan__reason">занялся собой? займись котом!</h2>
         </div>
-        <img class="food-packaging" src="img/index-can-mobile@1x.png" alt="Cat energy Pro">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@2x.png">
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@2x.jpg">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+          <img class="food-packaging" src="img/index-can-mobile@1x.png" alt="Cat energy Pro">
+        </picture>
         <a class="button page-header__button" href="form.html">Подобрать программу</a>
       </div>
     </header>
@@ -90,11 +100,20 @@
             </div>
             <h3 class="food-price">
               <span>затраты на питание:</span>
-              <span> 15 000 руб.</span>
+              <span>
+                15 000 руб.</span>
             </h3>
           </div>
-          <img class="proof__img proof__img--before" src="img/before-mobile@1x.png" alt="Фото-пруф кота до изменения">
-          <img class="proof__img proof__img--after" src="img/after-mobile@1x.png" alt="Фото-пруф кота после изменения">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+            <img class="proof__img proof__img--before" src="img/before-mobile@1x.png" alt="Фото-пруф кота до изменения">
+          </picture>
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+            <img class="proof__img proof__img--after" src="img/after-mobile@1x.png" alt="Фото-пруф кота после изменения">
+          </picture>
           <div class="filter-range">
             <a class="toggle-control toggle-control--left">было</a>
             <div class="range-controls"></div>
@@ -107,7 +126,9 @@
         <div class="page-footer__contacts contacts ">
           <div class="contacts__info">
             <h2 class="contacts__title">
-              приглашаем <br> к сотрудничеству дилеров!
+              приглашаем
+              <br>
+              к сотрудничеству дилеров!
             </h2>
             <p class="contacts__address">
               <span>ул. Большая Конюшенная, д. 19/8</span>

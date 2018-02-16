@@ -12,6 +12,10 @@
     background-color: #ffffff;
     padding-bottom: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 2px;
+  }
 }
 
 .proof__info {
@@ -22,7 +26,9 @@
 }
 
 .proof__title {
+  color: black;
   padding-top: 20px;
+  margin-bottom: 24px;
   font-size: 36px;
   font-style: normal;
   font-weight: lighter;
@@ -32,9 +38,10 @@
 
   @media screen and (min-width: @tablet-width) {
     width: 708px;
-    margin-top: 25px;
+    margin-top: 22px;
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 50px;
   }
 
   @media screen and (min-width: @desktop-width) {
@@ -87,40 +94,58 @@
 }
 
 .proof__img {
+  width: 320px;
+  max-width: 100%;
+
   @media screen and (min-width: @tablet-width) {
     position: absolute;
     left: 50%;
     margin-left: -306px;
     margin-bottom: 33px;
     bottom: 110px;
-    width: 612px;
+    width: 635px;
     height: 517px;
-    outline: 1px solid red;
   }
 
   @media (min-width: @desktop-width) {
     top: -10px;
-    margin-left: 0;
+    margin-left: -11px;
     bottom: 66px;
   }
 }
 
 .proof__img--before {
   margin-top: 40px;
-  margin-left: -20px;
+  content: url("../img/before-mobile@1x.png");
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    content: url("../img/before-mobile@2x.png");
+  }
+
 
   @media screen and (min-width: @tablet-width) {
+    width: 686px;
+    content: url("../img/before-tablet@1x.png");
     margin-top: 0;
-    top: 450px;
-    margin-left: -300px;
+    top: 449px;
+    margin-left: -336px;
     z-index: 2;
-    clip: rect(0, 306px, 517px, 0);
+    clip: rect(0, 337px, 517px, 0);
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      content: url("../img/before-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
-    top: -65px;
-    margin-left: -2px;
-    clip: rect(0, 327px, 517px, 0);
+    content: url("../img/before-desktop@1x.png");
+    top: -63px;
+    margin-left: -40px;
+    clip: rect(0, 364px, 517px, 0);
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      content: url("../img/before-desktop@2x.png");
+    }
   }
 }
 
@@ -128,14 +153,14 @@
   display: none;
 
   @media screen and (min-width: @tablet-width) {
-    top: 470px;
+    top: 451px;
     display: block;
-    clip: rect(0, 690px, 517px, 310px);
+    clip: rect(0, 690px, 517px, 307px);
   }
 
   @media (min-width: @desktop-width) {
-    top: -66px;
-    clip: rect(0, 690px, 517px, 310px);
+    top: -64px;
+    clip: rect(0, 690px, 517px, 335px);
   }
 }
 
@@ -208,7 +233,9 @@
 
 .proof__wrapper {
   .container();
-  width: 280px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 320px;
 
   @media screen and (min-width: @tablet-width) {
     padding-left: 0;
@@ -244,6 +271,5 @@
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 0;
-    outline: 1px solid red;
   }
 }
