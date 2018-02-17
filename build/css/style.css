@@ -1948,6 +1948,15 @@ img {
     margin-top: 78px;
   }
 }
+.page-form {
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .page-form {
+    overflow: hidden;
+    margin-top: -20px;
+  }
+}
 .form {
   padding-left: 20px;
   padding-right: 20px;
@@ -2925,11 +2934,17 @@ img {
   }
 }
 .page-catalog {
-  margin-bottom: 30px;
+  margin-bottom: 3px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .page-catalog {
+    margin-top: -18px;
+  }
 }
 @media (min-width: 1300px) {
   .page-catalog {
-    margin-bottom: 81px;
+    margin-bottom: 13px;
   }
 }
 .catalog-item {
@@ -3345,6 +3360,7 @@ img {
   }
 }
 .addition-item__title {
+  color: #222222;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
@@ -3376,6 +3392,7 @@ img {
 .addition-item {
   margin-top: 37px;
   position: relative;
+  color: #444444;
 }
 .addition-item::after {
   content: "";

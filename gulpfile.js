@@ -90,6 +90,10 @@ gulp.task("serve", function() {
     cors: true,
     ui: false
   });
+
+  gulp.watch("source/less/**/*.less", ["style"]);
+  gulp.watch("source/css/style.min.css").on("change", server.reload);
+  gulp.watch("source/*.html").on("change", server.reload);
 });
 
 
