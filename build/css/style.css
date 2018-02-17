@@ -219,7 +219,7 @@ img {
   position: absolute;
   left: 0;
   right: 0;
-  height: 0px;
+  height: 0;
   background-color: #68b738;
   z-index: 3;
 }
@@ -566,7 +566,7 @@ img {
   top: 8px;
   width: 24px;
   height: 11px;
-  background-image: url(../img/icon-right-arrow-long.svg);
+  background-image: url("../img/icon-right-arrow-long.svg");
 }
 @media (min-width: 768px) {
   .dietary__link-to::before {
@@ -852,7 +852,7 @@ img {
     border: none;
   }
   .features::after {
-    height: 0px;
+    height: 0;
   }
 }
 .features__item {
@@ -982,7 +982,7 @@ img {
     line-height: 405px;
     color: #f2f2f2;
     -webkit-transform: scale(0.9, 1.12);
-    transform: scale(0.9, 1.12);
+            transform: scale(0.9, 1.12);
     z-index: -2;
   }
 }
@@ -1010,7 +1010,7 @@ img {
     line-height: 405px;
     color: #f2f2f2;
     -webkit-transform: scale(0.9, 1.12);
-    transform: scale(0.9, 1.12);
+            transform: scale(0.9, 1.12);
     z-index: -2;
   }
 }
@@ -1911,7 +1911,7 @@ img {
   display: block;
 }
 .main-nav--links-opened .main-nav__toggle {
-  background-image: url(../img/icon-close.svg);
+  background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
 }
 .page-form__title {
@@ -2251,6 +2251,9 @@ img {
     width: 18px;
   }
 }
+.form__checkbox:checked + .form__label {
+  outline: none;
+}
 .form__checkbox:checked + .form__label::after {
   content: "";
   position: absolute;
@@ -2258,7 +2261,7 @@ img {
   left: 5px;
   width: 21px;
   height: 16px;
-  background-image: url(../img/icon-tick.svg);
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
@@ -2269,14 +2272,11 @@ img {
     height: 18px;
   }
 }
-.form__checkbox:hover + .form__label::before {
-  border: 1px solid #bababa;
-}
-.form__checkbox:checked + .form__label {
-  outline: none;
-}
 .form__checkbox:checked + .form__label::before {
   border: 1px solid black;
+}
+.form__checkbox:not(:checked):hover + .form__label::before {
+  border: 1px solid #bababa;
 }
 .form__checkbox:active + .form__label::before {
   opacity: 0.3;
