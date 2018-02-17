@@ -21,6 +21,23 @@
   height: 20px;
   margin-right: 35px;
   margin-bottom: 10px;
+  fill: #666666;
+
+  &:hover {
+    svg {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: rgba(104, 183, 56, 0.3);
+    }
+  }
+
+.social__link svg {
+  fill: #666666;
+}
 
   @media (min-width: @tablet-width) {
     margin-right: 22px;
@@ -36,7 +53,7 @@
 .social__link--vkontakte svg {
   @media (min-width: @tablet-width) {
     width: 30px;
-    height: 16px;
+    height: 18px;
   }
 }
 
@@ -72,8 +89,7 @@
 
 .social__link--facebook {
   margin-top: -5px;
-
   @media (min-width: @tablet-width) {
-    margin-top: -12px;
+    margin-top: -10px;
   }
 }

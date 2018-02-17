@@ -18,11 +18,75 @@
 
 
 .dietary__link-to {
+  position: relative;
   display: block;
   padding-bottom: 20px;
   color: #111111;
   text-decoration: none;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 95px;
+    top: 8px;
+    width: 24px;
+    height: 11px;
+    background-image: url(../img/icon-right-arrow-long.svg);
+
+    @media (min-width: @tablet-width) {
+      left: 161px;
+      top: 18px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 126px;
+      top: 23px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      left: 96px;
+      width: 40px;
+      height: 16px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: @tablet-width) {
+      &::before {
+        left: 165px;
+        width: 40px;
+        height: 16px;
+        background-image: url("../img/icon-right-arrow-verylong.svg");
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      &::before {
+        left: 125px;
+        width: 40px;
+        height: 16px;
+        background-image: url("../img/icon-right-arrow-verylong.svg");
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+&:active {
+  color: rgba(17, 17, 17, 0.3);
+
+  &::before {
+    opacity: 0.3;
+  }
+
+  &::after {
+    opacity: 0.3;
+  }
+}
+
 
   @media (min-width: @tablet-width) {
     padding-bottom: 65px;
@@ -194,7 +258,7 @@
         left: 392px;
       }
 
-      @media (min-width: @tablet-width) {
+      @media (min-width: @desktop-width) {
         top: 71px;
         left: -19px;
       }

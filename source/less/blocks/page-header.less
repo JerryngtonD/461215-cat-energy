@@ -45,6 +45,18 @@
       }
     }
   }
+
+  @media (min-width: @desktop-width) {
+      .menu__link {
+        &[href]:hover {
+          color: rgba(255, 255, 255, 0.6);
+        }
+
+        &[href]:active {
+          color: rgba(255, 255, 255, 0.3);
+        }
+    }
+  }
 }
 
 .page-header__top-level {

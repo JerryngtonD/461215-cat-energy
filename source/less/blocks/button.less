@@ -7,13 +7,34 @@
   text-transform: uppercase;
   border: none;
   text-decoration: none;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5eaa2f;
+  }
 }
 
 .button--show-more {
+  color: black;
   background-color: #f2f2f2;
   width: 100%;
   display: block;
   padding: 8px 0;
+
+  &:hover {
+    color: #111111;
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+    background-color: #ebebeb;
+  }
 
   @media (min-width: @tablet-width) {
     width: 246px;

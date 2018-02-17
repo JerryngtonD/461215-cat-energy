@@ -95,3 +95,24 @@
     display: none;
   }
 }
+
+.main-nav--links-hidden {
+  .menu__list {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
+  }
+}
+
+.main-nav--links-opened {
+  .menu__list {
+    display: block;
+  }
+
+  .main-nav__toggle {
+    background-image: url(../img/icon-close.svg);
+    background-repeat: no-repeat;
+  }
+}

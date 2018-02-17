@@ -8,6 +8,16 @@
   color: #111111;
   text-transform: uppercase;
   text-align: center;
+  text-decoration: none;
+
+  &[href]:hover {
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+
+  &[href]:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
 
   &--active {
     &::after {
@@ -15,17 +25,33 @@
       position: absolute;
       left: 0;
       right: 0;
-      height: 2px;
+      height: 0px;
       background-color: #68b738;
       z-index: 3;
 
       @media (min-width: @tablet-width) {
         top: 55px;
+        height: 2px;
       }
 
       @media (min-width: @desktop-width) {
         background-color: #ffffff;
       }
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 9px;
+    width: 100vw;
+    height: 1px;
+    transform: translateX(-50%);
+    background-color: #ededed;
+
+    @media (min-width: @tablet-width) {
+      height: 0;
     }
   }
 
@@ -44,8 +70,10 @@
 
 .menu__list {
   display: none;
+  overflow-x: hidden;
 
   @media (min-width: @tablet-width) {
+    overflow-x: auto;
     padding-top: 10px;
     display: flex;
     justify-content: space-between;
