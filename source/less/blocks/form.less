@@ -260,7 +260,7 @@
 }
 
 
-.form__radio + .form__label:focus {
+.form__radio:focus + .form__label {
   outline: none;
 
   &::before {
@@ -329,7 +329,7 @@
   }
 }
 
-.form__checkbox + .form__label:focus {
+.form__checkbox:focus + .form__label {
   outline: none;
 
   &::before {
@@ -484,7 +484,7 @@
 
 
 .form__checkbox {
-  display: none;
+  opacity: 0;
 }
 
 .form__checkbox + .form__label {
