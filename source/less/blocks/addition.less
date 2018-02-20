@@ -25,6 +25,7 @@
 
   @media (min-width: @desktop-width) {
     width: 910px;
+    margin-bottom: 73px;
   }
 }
 
@@ -38,14 +39,14 @@
 
   span {
     max-width: 260px;
-    padding-right: 11px;
+    padding-right: 23px;
     position: relative;
     background-color: white;
     z-index: 2;
 
     @media (min-width: @tablet-width) {
       padding-left: 37px;
-      padding-right: 0;
+      padding-right: 37px;
     }
 
     @media (min-width: @desktop-width) {
@@ -94,18 +95,18 @@
 
   @media (min-width: @desktop-width) {
     margin-left: -25px;
-    margin-bottom: 75px;
+    margin-bottom: 77px;
   }
 }
 
 .addition-item__description {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
   width: 280px;
   font-size: 14px;
   line-height: 14px;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
 
   @media (min-width: @tablet-width) {
     width: 235px;
@@ -139,8 +140,10 @@
 }
 
 .addition-item__title {
+  padding-left: 3px;
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 0;
   color: #222222;
   text-transform: uppercase;
 
@@ -174,7 +177,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -27px;
+    bottom: -26px;
     height: 1px;
     width: 100%;
     background-color: #ededed;

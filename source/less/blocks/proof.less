@@ -1,7 +1,7 @@
 .proof {
   position: relative;
   background-color: #f2f2f2;
-  padding-bottom: 33px;
+  padding-bottom: 36px;
 
   @media (min-width: @tablet-width) {
     .container();
@@ -27,8 +27,8 @@
 
 .proof__title {
   color: black;
-  padding-top: 20px;
-  margin-bottom: 24px;
+  padding-top: 18px;
+  margin-bottom: 28px;
   font-size: 36px;
   font-style: normal;
   font-weight: lighter;
@@ -38,7 +38,7 @@
 
   @media screen and (min-width: @tablet-width) {
     width: 708px;
-    margin-top: 22px;
+    margin-top: 27px;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 50px;
@@ -49,7 +49,7 @@
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 0;
-    margin-top: -10px;
+    margin-top: -3px;
     margin-bottom: 75px;
   }
 }
@@ -60,7 +60,7 @@
   line-height: 18px;
   margin-bottom: 25px;
   font-style: normal;
-  font-weight: lighter;
+  font-weight: 400;
   color: #444444;
   font-size: 14px;
 
@@ -74,8 +74,9 @@
   @media (min-width: @desktop-width) {
     width: 436px;
     padding-left: 37px;
-    padding-top: 58px;
+    padding-top: 55px;
     padding-right: 115px;
+    margin-bottom: 54px;
   }
 }
 
@@ -115,7 +116,7 @@
 }
 
 .proof__img--before {
-  margin-top: 40px;
+  margin-top: 35px;
   content: url("../img/before-mobile@1x.png");
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -139,7 +140,7 @@
 
   @media (min-width: @desktop-width) {
     content: url("../img/before-desktop@1x.png");
-    top: -63px;
+    top: -59px;
     margin-left: -40px;
     clip: rect(0, 364px, 517px, 0);
 
@@ -159,7 +160,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: -64px;
+    top: -59px;
     clip: rect(0, 690px, 517px, 335px);
   }
 }
@@ -180,17 +181,17 @@
   flex-direction: column;
   position: relative;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   width: 121px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 7px;
+  padding-bottom: 10px;
   border: 1px solid #cdcdcd;
 
   @media screen and (min-width: @tablet-width) {
     width: 160px;
     padding-top: 20px;
-    padding-bottom: 20px;
-    margin-right: 40px;
+    padding-bottom: 23px;
+    margin-right: 42px;
   }
 }
 
@@ -203,7 +204,7 @@
   position: absolute;
   left: 17px;
   right: 17px;
-  top: 40px;
+  top: 39px;
   width: auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -229,6 +230,10 @@
 
 .proof__case-description:nth-child(2) {
   padding-left: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .proof__wrapper {
@@ -260,7 +265,7 @@
   @media screen and (min-width: @tablet-width) {
     width: 708px;
     position: relative;
-    margin-bottom: 230px;
+    margin-bottom: 228px;
     padding-left: 30px;
     padding-right: 30px;
     margin-right: auto;

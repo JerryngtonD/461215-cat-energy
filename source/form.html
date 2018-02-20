@@ -24,7 +24,7 @@
           <a class="main-nav__logo" href="#">
             <img class="main-nav__img main-nav__img--text" src="img/icon-logo-mobile-header.svg" alt="">
           </a>
-          <div class="main-nav__toggle"></div>
+          <div class="main-nav__toggle main-nav__toggle--nojs"></div>
         </div>
         <div class="menu menu__list">
           <a class="menu__link" href="index.html">Главная</a>
@@ -77,19 +77,19 @@
         <div class="form__personal-info personal-info">
           <h2 class="form__title">
             <span>Контактные данные (владельца кота)</span></h2>
-          <div class="field-container info personal-info__field">
-            <label class="form__label" for="mail_field">E-MAIL:<sup>*</sup>
+          <div class="info personal-info__field">
+            <label class="form__label form__label--mail" for="mail_field">E-MAIL:<sup>*</sup>
             </label>
             <input class="form__text form__text--mail" id="mail_field" type="email" name="mail" placeholder="KUKLACHEV@GMAIL.COM" required="required"/>
-            <svg class="form-text__icon-mail" width="17" height="13">
+            <svg class="icon-mail" width="17" height="13">
               <use xlink:href="#icon-mail"></use>
             </svg>
           </div>
-          <div class="field-container info personal-info__field">
-            <label class="form__label" for="phone_number_field">телефон:<sup>*</sup>
+          <div class="info personal-info__field">
+            <label class="form__label form__label--phone" for="phone_number_field">телефон:<sup>*</sup>
             </label>
             <input class="form__text form__text--phone" id="phone_number_field" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required="required"/>
-            <svg class="form-text__icon-phone" width="20" height="20">
+            <svg class="icon-phone" width="20" height="20">
               <use xlink:href="#icon-phone"></use>
             </svg>
           </div>
@@ -106,7 +106,7 @@
             <span>Дополнительно</span></h2>
           <ul class="extra__list">
             <li class="extra__item">
-              <input class="form__checkbox" type="checkbox" name="sweetener" value="sweet" id="sugar" required="required" checked tabindex="0"/>
+              <input class="form__checkbox" type="checkbox" name="sweetener" value="sweet" id="sugar" required="required" checked="checked" tabindex="0"/>
               <label class="form__label" for="sugar">сахарозаменитель</label>
             </li>
             <li class="extra__item">
@@ -115,10 +115,10 @@
             </li>
             <li class="extra__item">
               <input class="form__checkbox" type="checkbox" name="milk" value="drink" id="milk" required="required" tabindex="0"/>
-              <label class="form__label" for="milk" >молоко</label>
+              <label class="form__label" for="milk">молоко</label>
             </li>
             <li class="extra__item">
-              <input class="form__checkbox" type="checkbox" name="vitamins" value="vitamins"  id="vitamins" required="required" tabindex="0"/>
+              <input class="form__checkbox" type="checkbox" name="vitamins" value="vitamins" id="vitamins" required="required" tabindex="0"/>
               <label class="form__label" for="vitamins">витамины</label>
             </li>
           </ul>
@@ -135,8 +135,8 @@
       </form>
     </main>
 
-    <footer class="page-footer page-footer--form">
-      <div class="page-footer__contacts contacts ">
+    <footer class="page-footer">
+      <div class="page-footer__contacts contacts contacts--form">
         <div class="contacts__info contacts__info--form">
           <h2 class="contacts__title">
             приглашаем
@@ -151,28 +151,28 @@
         <iframe class="contacts__map" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJKadbyg8xlkYRn4c8SdRTnOo&key=AIzaSyDsbAQS4KrgZMDOK9vRIrUqgumi9reKE9c"></iframe>
         <span class="about-logo about-logo--more contacts__about-logo"></span>
       </div>
-      <div class="footer-wrapper">
+      <div class="footer-wrapper footer-wrapper--main">
         <div class="page-footer__container">
           <a class="page-footer__logo" href="#">
-            <img class="footer__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
+            <img class="logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
           </a>
 
           <div class="page-footer__social social ">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы в ВКонтакте</span>
-              <svg width="30" height="16">
+              <svg width="25" height="18">
                 <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy/">
               <span class="visually-hidden">Мы в Инстаграме</span>
-              <svg width="23" height="23">
+              <svg width="18" height="23">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
             <a class="social__link social__link--facebook" href="https://b-m.facebook.com/htmlacademy/">
               <span class="visually-hidden">Мы в Фэйсбуке</span>
-              <svg width="14" height ="28">
+              <svg width="14" height="20">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
@@ -181,7 +181,7 @@
           <div class="page-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
             <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-              <svg width="24" height="32">
+              <svg width="28" height="36">
                 <use xlink:href="#icon-html-logo"></use>
               </svg>
             </a>

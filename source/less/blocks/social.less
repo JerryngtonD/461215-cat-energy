@@ -2,8 +2,15 @@
   display: flex;
   padding-top: 25px;
   padding-bottom: 10px;
-  padding-left: 78px;
+  padding-left: 72px;
   padding-right: 69px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 17px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 69px;
+  }
 
   @media (min-width: @desktop-width) {
     padding-top: 27px;
@@ -14,13 +21,13 @@
 .social__link {
   font-size: 16px;
   line-height: 16px;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   color: #444444;
   text-decoration: none;
   width: 20px;
   height: 20px;
-  margin-right: 35px;
-  margin-bottom: 10px;
+  margin-right: 38px;
+  margin-bottom: 8px;
   fill: #666666;
 
   &:hover {
@@ -59,8 +66,12 @@
 
 .social__link--vkontakte {
   @media (min-width: @tablet-width) {
-    margin-top: -5px;
+    margin-top: -10px;
     padding-left: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -5px;
   }
 }
 
@@ -71,11 +82,20 @@
     margin-top: 0;
     margin-left: 2px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -15px;
+  }
 }
 
 .social__link--instagram {
+  margin-top: -2px;
   @media (min-width: @tablet-width) {
-    margin-top: -8px;
+    margin-top: -13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 2px;
   }
 }
 
@@ -88,9 +108,9 @@
 
 
 .social__link--facebook {
-  margin-top: -5px;
+  margin-top: -1px;
 
   @media (min-width: @tablet-width) {
-    margin-top: -10px;
+    margin-top: -16px;
   }
 }

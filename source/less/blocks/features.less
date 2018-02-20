@@ -1,7 +1,7 @@
 .features {
   .centerer();
   position: relative;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
@@ -40,9 +40,10 @@
 
 .features__item {
   z-index: 5;
+  line-height: 18px;
   position: relative;
   padding-left: 80px;
-  margin-bottom: 27px;
+  margin-bottom: 20px;
   font-family: "Arial", "Helvetica", sans-serif;
   font-weight: lighter;
   font-size: 14px;
@@ -52,7 +53,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     width: 60px;
     height: 60px;
@@ -71,11 +72,12 @@
     position: relative;
     font-size: 16px;
     line-height: 24px;
-    padding-top: 113px;
+    padding-top: 114px;
     padding-right: 100px;
     padding-bottom: 103px;
     padding-left: 0;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
+    margin-right: -4px;
     width: 228px;
     flex-shrink: 3;
   }
@@ -102,7 +104,7 @@
     content: "1";
     position: absolute;
     top: -85px;
-    right: 75px;
+    right: 83px;
     font-size: 281px;
     line-height: 405px;
     color: #f2f2f2;
@@ -129,8 +131,8 @@
     content: "2";
     position: absolute;
     top: -85px;
-    right: 65px;
-    font-size: 281px;
+    right: 68px;
+    font-size: 275px;
     line-height: 405px;
     color: #f2f2f2;
     transform: scale(0.9, 1.12);
@@ -157,7 +159,7 @@
     content: "3";
     position: absolute;
     top: -85px;
-    right: 60px;
+    right: 66px;
     font-size: 281px;
     line-height: 405px;
     color: #f2f2f2;
@@ -183,10 +185,10 @@
   @media (min-width: @tablet-width) {
     content: "4";
     position: absolute;
-    top: -85px;
-    right: 60px;
+    top: -91px;
+    right: 71px;
     font-size: 281px;
-    line-height: 405px;
+    line-height: 422px;
     color: #f2f2f2;
     transform: scale(0.9, 1.12);
     z-index: -2;
@@ -205,7 +207,7 @@
 }
 
 .features__title {
-  margin-top: -6px;
+  margin-top: -2px;
   margin-bottom: 30px;
   font-size: 35px;
   line-height: 60px;
@@ -213,7 +215,7 @@
   color: #111111;
 
   @media (min-width: @tablet-width) {
-    margin-top: 42px;
+    margin-top: 44px;
     margin-bottom: 70px;
     font-size: 60px;
     line-height: 60px;

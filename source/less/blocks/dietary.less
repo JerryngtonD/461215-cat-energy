@@ -11,7 +11,7 @@
 
   @media (min-width: @desktop-width) {
     width: 462px;
-    padding-left: 55px;
+    padding-left: 53px;
     padding-right: 55px;
   }
 }
@@ -35,13 +35,13 @@
     background-image: url("../img/icon-right-arrow-long.svg");
 
     @media (min-width: @tablet-width) {
-      left: 161px;
-      top: 18px;
+      left: 164px;
+      top: 20px;
     }
 
     @media (min-width: @desktop-width) {
-      left: 126px;
-      top: 23px;
+      left: 131px;
+      top: 21px;
     }
   }
 
@@ -89,9 +89,9 @@
 
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 65px;
-    padding-left: 34px;
-    padding-top: 13px;
+    padding-bottom: 62px;
+    padding-left: 32px;
+    padding-top: 15px;
     line-height: 20px;
     font-size: 20px;
   }
@@ -104,6 +104,7 @@
 }
 
 .dietary__title {
+  color: black;
   position: relative;
   margin: 0;
   line-height: 37px;
@@ -128,21 +129,21 @@
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
-    padding-top: 72px;
-    padding-left: 34px;
+    padding-top: 75px;
+    padding-left: 33px;
 
     &::before {
-      top: 85px;
-      left: 428px;
+      top: 89px;
+      left: 426px;
       width: 200px;
       height: 200px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 79px;
-    padding-left: 160px;
-    margin-bottom: 56px;
+    padding-top: 75px;
+    padding-left: 161px;
+    margin-bottom: 57px;
 
     &::before {
       top: 46px;
@@ -211,7 +212,7 @@
   margin-top: 19px;
   line-height: 18px;
   background-color: #f2f2f2;
-  padding-bottom: 25px;
+  padding-bottom: 23px;
   font-size: 14px;
   font-weight: lighter;
   font-family: "Arial", "Helvetica", sans-serif;
@@ -219,7 +220,7 @@
   color: #444444;
 
   @media (min-width: @tablet-width) {
-    width: 360px;
+    width: 375px;
     border-bottom: none;
     padding-left: 32px;
     font-size: 16px;
@@ -232,6 +233,7 @@
     padding-left: 0;
     padding-bottom: 0;
     padding-top: 7px;
+    margin-bottom: 14px;
   }
 }
 
@@ -241,12 +243,15 @@
       top: 21px;
 
       @media (min-width: @tablet-width) {
-        top: 90px;
+        top: 92px;
+        left: 428px;
       }
 
       @media (min-width: @desktop-width) {
-        top: 49px;
+        top: 46px;
         left: -1px;
+        width: 100px;
+        height: 100px;
       }
     }
 
@@ -265,27 +270,46 @@
     }
 
     @media (min-width: @tablet-width) {
-      padding-top: 75px;
+      padding-top: 77px;
     }
 
     @media (min-width: @desktop-width) {
-      padding-top: 79px;
+      padding-top: 77px;
     }
   }
 
   .dietary__info {
     margin-top: 16px;
+    width: 237px;
+
+    @media (min-width: @tablet-width) {
+      width: 352px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 465px;
+    }
   }
 
   .dietary__link-to {
     margin-top: 10px;
 
     @media (min-width: @tablet-width) {
-      margin-top: 41px;
+      margin-top: 17px;
+
+      &::before {
+        left: 157px;
+        top: 19px;
+      }
     }
 
     @media (min-width: @desktop-width) {
       margin-top: 0;
+
+      &::before {
+        left: 125px;
+        top: 22px;
+      }
     }
   }
 }

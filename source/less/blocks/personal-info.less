@@ -2,10 +2,14 @@
   border: 0;
   padding: 0;
   padding-top: 3px;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 }
 
@@ -14,14 +18,15 @@
 
   @media (min-width: @tablet-width) {
     margin-left: 40px;
+    margin-bottom: 19px;
 
     input {
       margin-right: 35px;
-      padding-left: 24px;
+      padding-left: 20px;
     }
 
     label {
-      margin-right: 17px;
+      margin-right: 21px;
     }
   }
 
@@ -32,6 +37,20 @@
 
     input {
       padding-left: 21px;
+    }
+  }
+}
+
+.personal-info__field:last-child {
+  .form__label {
+    margin-right: 10px;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 15px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 18px;
     }
   }
 }
