@@ -27,11 +27,19 @@
 .contacts__map {
   width: 100%;
   height: 363px;
+  min-height: 363px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-size: cover;
   vertical-align: bottom;
   border: none;
 
   @media (min-width: @tablet-width) {
+    background-image: url("../img/bg-map-tablet@1x.png");
     height: 394px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/bg-map-tablet@1x.png");
   }
 }
 
